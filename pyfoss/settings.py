@@ -81,20 +81,16 @@ WSGI_APPLICATION = 'pyfoss.wsgi.application'
 DATABASES = {
     'default': {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': DB_NAME_DEFAULT,
-        'USER': DB_USER_DEFAULT,
-        'PASSWORD': DB_PASS_DEFAULT,
         'HOST': DB_HOST_DEFAULT,
         'PORT': DB_PORT_DEFAULT,  # Or path to database file if using sqlite3.
         # Set to empty string for default.
     },
     'fossee_new': {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': DB_NAME_FOSSEEIN,
-        'USER': DB_USER_FOSSEEIN,
-        'PASSWORD': DB_PASS_FOSSEEIN,
         # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'HOST': DB_HOST_FOSSEEIN,
         # Set to empty string for default.
